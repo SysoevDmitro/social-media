@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from rest_framework import generics
+from rest_framework import generics, viewsets, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
@@ -25,7 +25,7 @@ class ManageUserView(generics.RetrieveUpdateAPIView):
 class UserSearchAPIView(APIView):
     def get(self, request):
         query_params = request.query_params
-        search_query = query_params.get('q', None)  # Get the search query from query parameters
+        search_query = query_params.get("q", None)  # Get the search query from query parameters
 
         if search_query:
             # Perform the search query on User model
