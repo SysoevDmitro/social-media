@@ -30,7 +30,7 @@ class Post(models.Model):
     hashtags = models.ManyToManyField(Hashtag, blank=True, related_name="posts")
 
     def __str__(self):
-        return f"{self.content[15]}... author: {self.author}"
+        return f"{self.content}... author: {self.author}"
 
 
 class Comment(models.Model):
