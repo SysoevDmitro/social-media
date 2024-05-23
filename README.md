@@ -11,8 +11,8 @@ User profile has bio and profile picture.
 Follow these steps:
 
 ```bash
-git clone https://github.com/SysoevDmitro/Theatre-API-Service.git
-cd Theatre-API-Service\theater_service
+git clone https://github.com/SysoevDmitro/social-media.git
+cd social-media/social_media
 docker-compose build
 docker-compose up
 ```
