@@ -1,5 +1,5 @@
 """
-WSGI config for social_media project.
+WSGI config for social_media1 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
